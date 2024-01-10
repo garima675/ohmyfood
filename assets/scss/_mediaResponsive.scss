@@ -1,0 +1,113 @@
+@media screen and (min-width: 1024px) {
+  .fonctionnement {
+    width: 97%;
+
+    .fonctionnement__choix-container {
+      display: grid;
+      gap: 15px 30px;
+      grid-template-columns: repeat(3, 29%);
+      grid-template-rows: auto;
+      justify-content: center;
+      grid-template-areas: 
+        "title title title" 
+        "card1 card2 card3";
+
+      .title {
+        grid-area: title;
+      }
+
+      .card1 {
+        grid-area: card1;
+      }
+
+      .card2 {
+        grid-area: card2;
+      }
+
+      .card3 {
+        grid-area: card3;
+      }
+
+      a {
+        color: black;
+      }
+
+      .fonctionnement__choix-container__composant {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-family: roboto, sans-serif;
+        background: #f6f6f6;
+        border-radius: 20px;
+        box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.493);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .restaurants {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 40px 80px;
+    padding: 50px 0px;
+    grid-template-columns: repeat(2, 39%);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title title"
+      "card1 card2"
+      "card3 card4";
+
+    .title {
+      grid-area: title;
+    }
+
+    .card1 {
+      grid-area: card1;
+    }
+
+    .card2 {
+      grid-area: card2;
+    }
+
+    .card3 {
+      grid-area: card3;
+    }
+
+    .card4 {
+      grid-area: card4;
+    }
+  }
+
+  .fonctionnement {
+    width: 88%;
+
+    .fonctionnement__choix-container__composant {
+      width: 100%;
+    }
+  }
+
+  footer {
+    flex-direction: row-reverse;
+  }
+
+  .footer__logo h2 {
+    margin: 0 40px 10px;
+  }
+
+  .footer__content {
+    flex-direction: row;
+    margin-right: 80px;
+    align-items: center;
+    gap: 25px;
+  }
+}

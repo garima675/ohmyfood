@@ -1,0 +1,38 @@
+/**footer**/
+footer {
+  background: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: roboto, sans-serif;
+}
+
+.footer__logo h2 {
+  color: white;
+  font-size: 18px;
+  font-family: shrikhand, sans-serif;
+  font-weight: 400;
+  margin: 0 0 10px;
+  font-style: italic;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+
+    .fa-utensils {
+      margin-right: 10px;
+    }
+
+    .fa-handshake {
+      margin-right: 5px;
+      rotate: 325deg;
+    }
+  }
+}
+
