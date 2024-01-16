@@ -20,6 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  background-color: #f6f6f6;
   h1 {
     padding: 40px 55px 0px 55px;
     text-align: center;
@@ -36,7 +37,6 @@ body {
     font-size: 18px;
     font-family: $font-family_2;
     font-weight: 300;
-    
   }
 }
 .button-CTA {
@@ -46,9 +46,9 @@ body {
   font-family: $font-family_3;
   font-weight: 500;
   border-radius: 25px;
-  padding: 15px 20px;
+  padding: 15px 40px;
   border: none;
-  margin-bottom: 30px;
+  margin: 30px 0 40px 0;
   box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.493);
   cursor: pointer;
   transition: all 300ms;
@@ -133,17 +133,14 @@ a {
   gap: 15px;
   background-color: #f6f6f6;
   padding: 50px 20px;
-  
-    h2{
-      font-family: Roboto, sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      margin: 0;
-    }
+
+  h2 {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
   }
-
-
-
+}
 .restaurants__card {
   position: relative;
   overflow: hidden;
@@ -187,27 +184,31 @@ a {
     position: absolute;
     top: 225px;
     right: 45px;
-  
-  i {
-    position: absolute;
-    font-size: 1.3rem;
-    cursor: pointer;
-  }
-  .fa-solid {
-    opacity: 0;
-    color: $color_7;
-    background-clip: text;
-    
-    
-    
-  }
-  .fa-solid:active{
-    opacity: 1;
-  }
-}
-  
-}
 
+    i {
+      position: absolute;
+      font-size: 1.3rem;
+    }
+    .fa-solid {
+      opacity: 0;
+      color: transparent;
+      background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      transition: all 0.4s ease-in-out;
+    }
+    &:hover {
+      .fa-regular {
+        opacity: 0;
+        transition: all 300ms;
+      }
+      .fa-solid {
+        opacity: 1;
+        transition: all 300ms;
+      }
+    }
+  }
+}
 
 .restaurants__card__nouveau {
   position: absolute;
