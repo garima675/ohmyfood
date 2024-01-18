@@ -10,6 +10,51 @@ body {
   color: $color_1;
   box-sizing: border-box;
 }
+/**loader**/
+
+/******Animation du Loader de chargement************/
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 91, 91, 0.299);
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  animation: fadeOut 1s linear 1s forwards;
+}
+
+.loader {
+  height: 150px;
+  width: 150px;
+  border-top: 8px solid pink;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid pink;
+  border-left: 8px solid transparent;
+  border-radius: 100px;
+  animation: rotateLoader 1s linear infinite;
+}
+
+@keyframes rotateLoader {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 
 /***reservation**/
 
