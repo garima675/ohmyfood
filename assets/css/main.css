@@ -424,6 +424,26 @@ footer {
   flex-direction: column;
 }
 
+@keyframes menu-appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card-box.entrees {
+  animation: menu-appear 1000ms 500ms both ease-in-out;
+}
+.card-box.plats {
+  animation: menu-appear 1000ms 1000ms both ease-in-out;
+}
+.card-box.desserts {
+  animation: menu-appear 1000ms 1500ms both ease-in-out;
+}
+
 /* descriptif menu titre et ligne*/
 .card-box {
   background-color: #f6f6f6;
